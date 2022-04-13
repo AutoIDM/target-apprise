@@ -1,7 +1,7 @@
 # `target-apprise` ![Build and Tests](https://github.com/AutoIDM/target-apprise/actions/workflows/ci.yml/badge.svg?branch=main) [![PyPI download month](https://img.shields.io/pypi/dm/target-apprise.svg)](https://pypi.python.org/pypi/tap-apprise/) 
 Target for Apprise. 
 
-Tap was created by [AutoIDM](https://autoidm.com) only because multiple community members came together to get this tap created. Check AutoIDM out for tap/target creation, maintenace, support, and more!
+Tap was created by [AutoIDM](https://autoidm.com)
 
 <a href="https://autoidm.com"><img alt="AutoIDM" src="./images/autoidm.png" width="250"></a>
 
