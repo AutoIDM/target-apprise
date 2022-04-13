@@ -1,0 +1,11 @@
+version: 1
+send_anonymous_usage_stats: true
+project_id: 17bfa8d5-9252-4c89-9b98-fa9b8e430a2d
+plugins:
+  loaders:
+  - name: target-apprise
+    namespace: target_apprise
+    pip_url: -e .
+    settings:
+    - name: uris
+      kind: array

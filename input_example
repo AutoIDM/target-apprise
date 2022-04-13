@@ -1,0 +1,4 @@
+{"type": "SCHEMA", "stream": "slack", "schema": {"type": "object", "properties": {"title": {"type": ["string", "null"]}, "body": {"type": ["string", "null"]}, "key_properties": []}}}
+{"type": "RECORD", "stream": "slack", "record": {"title": "Test Title", "body": "Test Notification"}}
+{"type": "RECORD", "stream": "slack", "record": {"body": "Test no Title"}}
+{"type": "RECORD", "stream": "slack", "record": {"title": "Test no Body"}}
