@@ -21,10 +21,10 @@ Want to become a sponsor? Reach out to us at [autoidm.com](https://autoidm.com)
 | Setting             | Required | Default | Description |
 |:--------------------|:--------:|:-------:|:------------|
 | uris                | True     | None    | Array of apprise URIs, see list here https://github.com/caronc/apprise |
-| stream_maps         | False    | None    | Config object for stream maps capability. |
-| stream_map_config   | False    | None    | User-defined config values to be used within map expressions. |
-| flattening_enabled  | False    | None    | 'True' to enable schema flattening and automatically expand nested properties. |
-| flattening_max_depth| False    | None    | The max depth to flatten schemas. |
+| stream_maps         | False    | None    | Config object for stream maps capability. (Doesn't make much sense with this target) |
+| stream_map_config   | False    | None    | User-defined config values to be used within map expressions. (Doesn't make much sense with this target) |
+| flattening_enabled  | False    | None    | 'True' to enable schema flattening and automatically expand nested properties. (Doesn't make much sense with this target) |
+| flattening_max_depth| False    | None    | The max depth to flatten schemas. (Doesn't make much sense with this target) |
 
 A full list of supported settings and capabilities is available by running: `target-apprise --about`
 
@@ -43,8 +43,8 @@ You can easily run `target-apprise` by itself or in a pipeline using [Meltano](h
 ```bash
 target-apprise --version
 target-apprise --help
-# Test using the "Carbon Intensity" sample:
-tap-carbon-intensity | target-apprise --config /path/to/target-apprise-config.json
+# Test using the sample in this repo:
+cat input_example | target-apprise --config /path/to/target-apprise-config.json
 ```
 
 ## Developer Resources
@@ -92,7 +92,7 @@ Now you can test and orchestrate using Meltano:
 # Test invocation:
 meltano invoke target-apprise --version
 # OR run a test `elt` pipeline with the Carbon Intensity sample tap:
-meltano elt tap-carbon-intensity target-apprise
+cat cat input_example | meltano invoke target-apprise
 ```
 
 ### SDK Dev Guide
