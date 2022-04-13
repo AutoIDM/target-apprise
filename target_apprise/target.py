@@ -16,8 +16,9 @@ class TargetApprise(Target):
         th.Property(
             "uris",
             th.ArrayType(th.StringType),
-            description="Array of apprise URIs, see list here https://github.com/caronc/apprise",
-            required=True
+            description="Array of apprise URIs,"
+            + "checkout https://github.com/caronc/apprise",
+            required=True,
         ),
     ).to_dict()
     default_sink_class = AppriseSink

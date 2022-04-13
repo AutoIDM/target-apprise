@@ -15,6 +15,6 @@ class AppriseSink(RecordSink):
 
         title: Optional[str] = record.get("title")
         body: Optional[str] = record.get("body")
-        if (title is None and body is None):
+        if title is None and body is None:
             raise Exception("Both the title and body cannot be None")
         a.notify(title=title, body=body)

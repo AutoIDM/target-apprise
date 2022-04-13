@@ -1,8 +1,14 @@
-# `target-apprise`
-
+# `target-apprise` ![Build and Tests](https://github.com/AutoIDM/tap-apprise/actions/workflows/ci.yml/badge.svg?branch=main) [![PyPI download month](https://img.shields.io/pypi/dm/tap-apprise.svg)](https://pypi.python.org/pypi/tap-apprise/) 
 Sample target for Apprise. 
 
+Tap was created by [AutoIDM](https://autoidm.com) only because multiple community members came together to get this tap created. Check AutoIDM out for tap/target creation, maintenace, support, and more!
+
+<a href="https://autoidm.com"><img alt="AutoIDM" src="./images/autoidm.png" width="250"></a>
+
 Built with the [Meltano SDK](https://sdk.meltano.com) for Singer Taps and Targets.
+
+# Sponsors
+Want to become a sponsor? Reach out to us at [autoidm.com](https://autoidm.com)
 
 ## Capabilities
 

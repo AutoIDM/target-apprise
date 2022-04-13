@@ -1,6 +1,5 @@
 """Tests standard target features using the built-in SDK tests library."""
 
-import datetime
 
 from typing import Dict, Any
 
