@@ -5,7 +5,7 @@ Tap was created by [AutoIDM](https://autoidm.com)
 
 <a href="https://autoidm.com"><img alt="AutoIDM" src="./images/autoidm.png" width="250"></a>
 
-Built with the [Meltano SDK](https://sdk.meltano.com) for Singer Taps and Targets.
+Built with the [Meltano SDK](https://sdk.meltano.com) for Singer Taps and Targets. Curious about Meltano? I'd recommend checking out the [Meltano Hub](https://hub.meltano.com/) for a large number of taps/targets available to connect data with!
 
 # Sponsors
 Want to become a sponsor? Reach out to us at [autoidm.com](https://autoidm.com)
