@@ -12,7 +12,7 @@ Built with the [Meltano SDK](https://sdk.meltano.com) for Singer Taps and Target
 ```bash
 pipx install meltano
 meltano invoke target-apprise --version
-# Note that instead of input_example, you can setup data to come from anywhere (Normally it'd be from a DB / DW via a meltano tap) 
+# Note that instead of input_example, you can setup data to come from anywhere (Normally it'd be from a DB / DW via a singer tap) 
 cat input_example | meltano invoke target-apprise
 ```
 
