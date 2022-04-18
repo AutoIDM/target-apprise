@@ -7,10 +7,12 @@ Tap was created by [AutoIDM](https://autoidm.com)
 
 Built with the [Meltano SDK](https://sdk.meltano.com) for Singer Taps and Targets. Curious about Meltano? I'd recommend checking out the [Meltano Hub](https://hub.meltano.com/) for a large number of taps/targets available to connect data with!
 
-# Usage
+# Usage (example with a slack uri)
 
 ```bash
 pipx install meltano
+#Note that you have to escape the quotes, dotenv is nice as it's not committed along with your repo keeping your secrets, secret!
+meltano config target-apprise set uris [\"https://hooks.slack.com/services/tokenhere/tokenhere/tokenhere\"] --store dotenv
 meltano invoke target-apprise --version
 # Note that instead of input_example, you can setup data to come from anywhere (Normally it'd be from a DB / DW via a singer tap) 
 cat input_example | meltano invoke target-apprise
