@@ -7,6 +7,15 @@ Tap was created by [AutoIDM](https://autoidm.com)
 
 Built with the [Meltano SDK](https://sdk.meltano.com) for Singer Taps and Targets. Curious about Meltano? I'd recommend checking out the [Meltano Hub](https://hub.meltano.com/) for a large number of taps/targets available to connect data with!
 
+# Usage
+
+```bash
+pipx install meltano
+meltano invoke target-apprise --version
+# Note that instead of input_example, you can setup data to come from anywhere (Normally it'd be from a DB / DW via a meltano tap) 
+cat input_example | meltano invoke target-apprise
+```
+
 # Sponsors
 Want to become a sponsor? Reach out to us at [autoidm.com](https://autoidm.com)
 
