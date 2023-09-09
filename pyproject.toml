@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "target-apprise"
-version = "0.0.2"
+version = "0.0.4"
 description = "`target-apprise` is a Singer target for Apprise, built with the Meltano SDK for Singer Targets."
 authors = ["AutoIDM"]
 keywords = [
