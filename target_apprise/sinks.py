@@ -1,7 +1,8 @@
 """Apprise target sink class, which handles writing streams."""
-from singer_sdk.sinks import RecordSink
 from typing import Optional
+
 import apprise
+from singer_sdk.sinks import RecordSink
 
 
 class AppriseSink(RecordSink):
@@ -17,4 +18,5 @@ class AppriseSink(RecordSink):
         body: Optional[str] = record.get("body")
         if title is None and body is None:
             raise Exception("Both the title and body cannot be None")
-        a.notify(title=title, body=body)
+        if a.notify(title=title, body=body) is False:
+            raise Exception("Failed to send notification")
