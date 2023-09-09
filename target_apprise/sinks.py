@@ -10,7 +10,7 @@ class AppriseSink(RecordSink):
 
     def process_record(self, record: dict, context: dict) -> None:
         """Process the record."""
-        a = apprise.Apprise(debug=True)
+        a = apprise.Apprise()
         for uri in self.config["uris"]:
             a.add(uri)
 
