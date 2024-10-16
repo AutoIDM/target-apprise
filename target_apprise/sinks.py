@@ -16,7 +16,8 @@ class AppriseSink(RecordSink):
 
         title: Optional[str] = record.get("title")
         body: Optional[str] = record.get("body")
+        attach: Optional[str] = record.get("attach")
         if title is None and body is None:
             raise Exception("Both the title and body cannot be None")
-        if a.notify(title=title, body=body) is False:
+        if a.notify(title=title, body=body, attach=attach) is False:
             raise Exception("Failed to send notification")
