@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "target-apprise"
-version = "0.0.4"
+version = "0.0.0" # Not used. Our version is managed by poetry_dynamic_versioning.
 description = "`target-apprise` is a Singer target for Apprise, built with the Meltano SDK for Singer Targets."
 authors = ["AutoIDM"]
 keywords = [
@@ -32,8 +32,13 @@ multi_line_output = 3 # Vertical Hanging Indent
 src_paths = "target_apprise"
 
 [build-system]
-requires = ["poetry-core>=1.0.8"]
-build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.9.0", "poetry-dynamic-versioning>=1.4.0"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+style = "semver"
 
 [tool.poetry.scripts]
 # CLI declaration
