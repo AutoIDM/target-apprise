@@ -23,7 +23,7 @@ class TargetApprise(Target):
         th.Property(
             "uri_replacement",
             th.BooleanType,
-            description= (
+            description=(
                 "If enabled, allows for uris to be dynamically configured. Any fields "
                 "in the record that have a name beginning with `_sdc_replace_`, will "
                 "have their value substituted in for a matching string in the URI. See "

@@ -18,7 +18,7 @@ class AppriseSink(RecordSink):
                 for k, v in record.items():
                     if not k.startswith("_sdc_replace_"):
                         continue
-                    to_replace = f"{{{k}}}" # Ex: '{_sdc_replace_target_email}'
+                    to_replace = f"{{{k}}}"  # Ex: '{_sdc_replace_target_email}'
 
                     if to_replace not in uri:
                         debug_msg = (  # Contains secrets!
