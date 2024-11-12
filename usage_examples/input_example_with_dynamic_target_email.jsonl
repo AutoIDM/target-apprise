@@ -1,0 +1,3 @@
+{"type": "SCHEMA", "stream": "ses", "schema": {"type": "object", "properties": {"title": {"type": ["string", "null"]}, "body": {"type": ["string", "null"]}, "_sdc_replace_target_email": {"type": ["string", "null"]}, "key_properties": []}}}
+{"type": "RECORD", "stream": "ses", "record": {"title": "Test Title", "body": "Test Notification", "_sdc_replace_target_email": "to_email_alpha@example.com"}}
+{"type": "RECORD", "stream": "ses", "record": {"title": "Test Title", "body": "Test Notification", "_sdc_replace_target_email": "to_email_bravo@example.com"}}

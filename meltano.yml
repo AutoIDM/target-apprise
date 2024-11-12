@@ -9,3 +9,5 @@ plugins:
     settings:
     - name: uris
       kind: array
+    - name: uri_replacement
+      kind: boolean
