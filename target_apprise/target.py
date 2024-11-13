@@ -20,5 +20,17 @@ class TargetApprise(Target):
             + "checkout https://github.com/caronc/apprise",
             required=True,
         ),
+        th.Property(
+            "uri_replacement",
+            th.BooleanType,
+            description=(
+                "If enabled, allows for uris to be dynamically configured. Any fields "
+                "in the record that have a name beginning with `_sdc_replace_`, will "
+                "have their value substituted in for a matching string in the URI. See "
+                "an example [here](#dynamically-providing-target-emails)."
+            ),
+            required=True,
+            default=False,
+        ),
     ).to_dict()
     default_sink_class = AppriseSink
