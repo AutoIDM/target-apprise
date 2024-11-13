@@ -46,6 +46,7 @@ class AppriseSink(RecordSink):
                         "uri_replacement placeholders for which no matching "
                         "columns exist."
                     )
+                    raise RuntimeError(msg)
             a.add(formatted_uri)
 
         title: t.Optional[str] = record.get("title")
